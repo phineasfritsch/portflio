@@ -1,0 +1,45 @@
+
+.globe-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 2rem auto;
+}
+
+.globe {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #80bfff 0%, #0082d6 80%);
+  animation: spin 25s linear infinite;
+}
+
+.icon {
+  position: absolute;
+  font-size: 1.75rem;
+  pointer-events: none;
+}
+
+.skyscraper {
+  top: 20%;
+  left: 65%;
+}
+
+.boat {
+  bottom: 10%;
+  left: 30%;
+}
+
+.cabin {
+  top: 55%;
+  left: 15%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
