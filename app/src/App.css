@@ -8,6 +8,10 @@
   border: 4px double #333;
 }
 
+.pixel {
+  font-family: var(--pixel-font);
+}
+
 header {
   text-align: center;
   margin-bottom: 2rem;

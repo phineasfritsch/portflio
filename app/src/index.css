@@ -1,5 +1,6 @@
 :root {
   font-family: 'Courier New', Courier, monospace;
+  --pixel-font: 'Press Start 2P', cursive;
   line-height: 1.5;
   font-weight: 400;
   color: #222;
@@ -28,4 +29,9 @@ body {
 
 h1 {
   font-size: 3.2em;
+  font-family: var(--pixel-font);
+}
+
+h2 {
+  font-family: var(--pixel-font);
 }

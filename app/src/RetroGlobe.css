@@ -12,12 +12,34 @@
   border-radius: 50%;
   background: radial-gradient(circle at 30% 30%, #80bfff 0%, #0082d6 80%);
   animation: spin 25s linear infinite;
+  image-rendering: pixelated;
 }
 
 .icon {
   position: absolute;
   font-size: 1.75rem;
-  pointer-events: none;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.icon::after {
+  content: attr(data-label);
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 1px solid #333;
+  padding: 2px 4px;
+  font-size: 0.6rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s;
+  font-family: var(--pixel-font);
+}
+
+.icon:hover::after {
+  opacity: 1;
 }
 
 .skyscraper {
@@ -28,6 +50,7 @@
 .boat {
   bottom: 10%;
   left: 30%;
+  animation: rock 3s ease-in-out infinite;
 }
 
 .cabin {
@@ -41,5 +64,17 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes rock {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
   }
 }

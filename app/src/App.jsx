@@ -5,12 +5,12 @@ function App() {
   return (
     <div className="container">
       <header>
-        <h1>Welcome Aboard!</h1>
+        <h1 className="pixel">Welcome Aboard!</h1>
         <p className="tagline">Actuarial insights meet sailing adventures</p>
       </header>
       <RetroGlobe />
       <section>
-        <h2>About Me</h2>
+        <h2 className="pixel">About Me</h2>
         <p>
           I&#39;m an actuarial mathematics major with a passion for navigating both
           risk models and the open seas. I enjoy exploring classic web aesthetics
@@ -18,7 +18,7 @@ function App() {
         </p>
       </section>
       <section>
-        <h2>Actuarial Math</h2>
+        <h2 className="pixel">Actuarial Math</h2>
         <p>
           From probability distributions to survival models, I love turning
           complex data into clear insights. My studies focus on analyzing
@@ -26,7 +26,7 @@ function App() {
         </p>
       </section>
       <section>
-        <h2>Sailing Adventures</h2>
+        <h2 className="pixel">Sailing Adventures</h2>
         <p>
           When I&#39;m not crunching numbers, I&#39;m likely trimming sails and chasing
           the perfect breeze. Sailing teaches resilience, strategic thinking, and
