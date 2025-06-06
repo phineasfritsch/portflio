@@ -1,0 +1,31 @@
+:root {
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #222;
+  background: repeating-linear-gradient(45deg,#fdf3f2,#fdf3f2 10px,#f9e0c4 10px,#f9e0c4 20px);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #005f73;
+}
+
+a:hover {
+  color: #0a9396;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+}
